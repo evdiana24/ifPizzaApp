@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Carrito">
+
+    <TextView
+        android:id="@+id/txv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="CARRITO"
+        android:textColor="#33681E"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rcvCarrito"
+        app:layout_constraintVertical_bias="0.128">
+
+            <TextView
+                android:id="@+id/txvTotalPorProductos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$  0.00"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cargo por entrega"
+                android:textSize="15dp"/>
+
+
+            <TextView
+                android:id="@+id/txvCargoPorEntrega"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$  0.99"
+                android:textSize="15dp"
+                android:textAlignment="textEnd"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9C9A9A"
+            android:layout_marginVertical="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#33681E"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txvTotalCarrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$  0.99"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#33681E"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modalidad de entrega: "
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txvTipoEntrega"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="servicio a domicilio"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLoAntesPosible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lo antes posible"
+                android:textAllCaps="false"
+                android:layout_margin="5dp"
+                android:backgroundTint="#33681E"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnProgramarOrden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Programar orden"
+                android:textColor="#33681E"
+                android:textAllCaps="false"
+                android:layout_margin="5dp"
+                android:backgroundTint="@android:color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                app:strokeColor="#33681E"
+                app:strokeWidth="1dp" />
+        </LinearLayout> -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9C9A9A"
+            android:layout_marginVertical="15dp"/>
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIRECCIÓN"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginVertical="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/rectangle">
+
+
+            <ImageView
+                android:id="@+id/imgDireccion"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/locationicon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/txvNombreDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dirección:"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#33681E"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"/>
+
+                <EditText
+                    android:id="@+id/txvDireccionCarrito"
+                    android:layout_width="180dp"
+                    android:textSize="16sp"
+                    android:layout_height="40dp"/>
+
+                <!-- <TextView
+                    android:id="@+id/txvDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Colonia Santa Marta"
+                    android:textAlignment="textStart"
+                    android:textColor="#9C9A9A"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txvMunicipioDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Sonsonate"
+                    android:textAlignment="textStart"
+                    android:textColor="#9C9A9A"
+                    android:textSize="15sp" /> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <ImageView
+                    android:id="@+id/imgCheckDireccion"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/checkedicon" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9C9A9A"
+            android:layout_marginVertical="25dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/edtInstruccionesOrden"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:ems="5"
+            android:gravity="start|top"
+            android:hint="Instrucciones de orden (opcional)"
+            android:inputType="textMultiLine"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="588dp"
+            android:background="#EFEDED"/>
+
+        <Button
+            android:id="@+id/btnGenerarOrden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GUARDAR ORDEN" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

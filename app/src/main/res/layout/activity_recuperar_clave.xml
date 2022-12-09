@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3D9839"
+    tools:context=".RecuperarClave" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRecuperarContra"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="@drawable/whitecardview"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txvLabelRecuperarContra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="RECUPERA TU CONTRASEÑA"
+            android:textColor="#33681E"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayoutRecuperarContra" />
+
+        <TextView
+            android:id="@+id/txvIndicacionesRecuperacion"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            android:text="Escribe los siguientes datos para verificar tu cuenta y poder realizar la recuperación de tu contraseña."
+            android:textColor="#5E5E5E"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txvLabelRecuperarContra" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtinputCorreo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:hint="Escribe tu correo electrónico"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:startIconDrawable="@android:drawable/sym_action_email"
+            app:layout_constraintTop_toBottomOf="@+id/txvIndicacionesRecuperacion">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtDigiteCorreoRecuperarClave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnVerificar"
+            android:layout_width="355dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#33681E"
+            android:fadingEdge="vertical"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="verficarRecuperacionClave"
+            android:shape="oval"
+            android:text="Verificar"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutClave" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "255741537301",
+    "firebase_url": "https://ifpizza-default-rtdb.firebaseio.com",
+    "project_id": "ifpizza",
+    "storage_bucket": "ifpizza.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255741537301:android:c28211ae83e3f2e64bb21c",
+        "android_client_info": {
+          "package_name": "com.example.ifpizzaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255741537301-da1ffcdjpc2i3q9or49o1g5j8etcug6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5tJRUvnjZbIeYneaQseT5hyUb1mTkedc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255741537301-da1ffcdjpc2i3q9or49o1g5j8etcug6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3D9839"
+    tools:context=".DescripcionProducto">
+
+    <ImageView
+        android:id="@+id/imgProductoDescripcion"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutProductoDescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/pizzapeperoni" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayoutProductoDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="@drawable/whitecardview"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/txvNombreProductoDescripcion"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Pizza de pepperoni 8 porciones"
+            android:textColor="#33681E"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayoutProductoDescripcion" />
+
+        <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/txvTiempoCoccion"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNombreProductoDescripcion"
+        app:srcCompat="@drawable/clockicon" />
+
+        <TextView
+            android:id="@+id/txvTiempoCoccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="30 min"
+            android:textColor="#33681E"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txvNombreProductoDescripcion" />
+
+        <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/txvReviewProducto"
+        app:layout_constraintTop_toBottomOf="@+id/txvNombreProductoDescripcion"
+        app:srcCompat="@drawable/staricon" />
+
+    <TextView
+        android:id="@+id/txvReviewProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="4.5"
+        android:textColor="#33681E"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/txvNombreProductoDescripcion" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/txvKiloCalorias"
+        app:layout_constraintTop_toBottomOf="@+id/txvNombreProductoDescripcion"
+        app:srcCompat="@drawable/fireicon" />
+
+    <TextView
+        android:id="@+id/txvKiloCalorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="215kc"
+        android:textColor="#33681E"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNombreProductoDescripcion" />
+
+    <TextView
+        android:id="@+id/txvPrecioProductoDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="$10.00"
+        android:textColor="#33681E"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvTiempoCoccion" />
+
+    <ImageView
+        android:id="@+id/imgMasProductoDescripcion"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginRight="7dp"
+        app:layout_constraintEnd_toStartOf="@+id/txvCantidadProductoDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/plusicon" />
+
+    <TextView
+        android:id="@+id/txvCantidadProductoDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="92dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#33681E"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toEndOf="@+id/txvPrecioProductoDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/txvKiloCalorias" />
+
+    <ImageView
+        android:id="@+id/imgMenosProductoDescripcion"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toEndOf="@+id/txvCantidadProductoDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/txvKiloCalorias"
+        app:srcCompat="@drawable/minusicon" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Descripción"
+        android:textColor="#33681E"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvPrecioProductoDescripcion" />
+
+    <TextView
+        android:id="@+id/txvDescripcionProducto"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Escribe los siguientes datos para verificar tu cuenta y poder realizar la recuperación de tu contraseña."
+        android:textColor="#5E5E5E"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btnAgregarAPedido"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#33681E"
+        android:fadingEdge="vertical"
+        android:fontFamily="sans-serif-medium"
+        android:shape="oval"
+        android:text="Agregar pedido"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

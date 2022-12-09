@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3D9839"
+    tools:context=".CambiarClave">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCambiarClave"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="@drawable/whitecardview"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txvCambioDeContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="CAMBIO DE CONTRASEÑA  "
+            android:textColor="#33681E"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayoutCambiarClave" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInputClaveActual"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:hint="Escribe tu clave actual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:startIconDrawable="@android:drawable/ic_lock_lock"
+            app:layout_constraintTop_toBottomOf="@+id/txvCambioDeContraseña">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtDigiteClaveActual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInputClaveNueva"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="5dp"
+            android:hint="Escribe tu nueva clave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:startIconDrawable="@android:drawable/ic_lock_lock"
+            app:layout_constraintTop_toBottomOf="@+id/txtInputClaveActual">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtDigiteNuevaClave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInputConfirmarClave"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="5dp"
+            android:hint="Confirma tu nueva clave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:startIconDrawable="@android:drawable/ic_lock_lock"
+            app:layout_constraintTop_toBottomOf="@+id/txtInputClaveNueva">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtTelefonoRecuperarClave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnGuardarNuevaClave"
+            android:layout_width="355dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#33681E"
+            android:fadingEdge="vertical"
+            android:fontFamily="sans-serif-medium"
+            android:text="Guardar cambios"
+            android:textSize="18dp"
+            android:shape="oval"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInputConfirmarClave" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ifpizzaapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IfPizzaApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".ListaProductos"
+            android:exported="false" />
+        <!-- <activity
+            android:name=".Principal"
+            android:exported="false" /> -->
+        <activity
+            android:name=".CambiarClave"
+            android:exported="false" />
+        <activity
+            android:name=".Maps_Activity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Registrarse"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Logo"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+<activity
+            android:name=".MenuUsuario"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <!--
+<activity
+            android:name=".Favoritos"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".DescripcionProducto"
+            android:exported="false" />
+        <!--
+ <activity
+            android:name=".Ordenes"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".DatosUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".RecuperarClave"
+            android:exported="false" />
+    </application>
+
+</manifest>
